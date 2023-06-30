@@ -17,7 +17,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     })
     .then(response => response.json())
     .then(data => {
-        alert('User information saved successfully!');
+        alert('Registered');
         document.getElementById('userForm').reset();
     })
     .catch(error => console.error('Error:', error));

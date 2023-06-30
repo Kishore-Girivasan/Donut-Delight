@@ -339,6 +339,7 @@ function toggleBtn(button) {
     loginPopUp.style.height = "430px";
     signUpBtn.classList.add("active");
     loginBtn.classList.remove("active");
+
   }
 }
 
