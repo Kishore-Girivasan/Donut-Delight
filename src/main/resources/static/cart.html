@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cart.css">
+    <title>cart</title>
+</head>
+<body>
+    <section class="header">
+        <div class="header_logo">
+          Donut Delight
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="navigation-bar-items">
+          <a href="index.html"><li id="home">Home</li></a>
+          <a href="aboutus.html"><li id="about-us">About-Us</li></a>
+          <a href="menu.html"><li id="menu">Menu</li></a>
+          <a href="feedback.html"><li id="feedback">Feedback</li></a>
+          <a href="locateus.html"><li id="takeaway-button">Takeaway</li></a>
+        </ul>
+    </section>
+    <label id="checkout-lable"></label>
+    <main>
+        <div class="order-info">
+            <h4>Order Summary</h4>
+            <div class="items-price">
+                <span id="item-count-lable">items(2):</span>
+                <span id="item-price">₹900</span>
+            </div>
+            <div class="delivery-charge">
+                <span id="delivery-charge-lable">delivery charge:</span>
+                <span id="delivery-charge">0</span>
+            </div>
+            <div class="tax">
+                <span id="tax-lable">Tax(5%):</span>
+                <span id="tax-amount">₹48</span>
+            </div>
+            <hr id="line">
+            <div class="total">
+                <span id="total-amount-lable">Total:</span>
+                <span id="total-amount">₹988</span>
+            </div>
+            <div id="paypal-buttons"></div>
+        </div>
+        <div class="noItems">
+            <span>Your cart is empty</span>
+            <button
+            onclick="window.location.href='menu.html'" 
+            id="return-to-menu">Return to Menu</button>
+        </div>
+        <div class="cart-items js-cart-items">
+        </div>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=AaVgHFAVcniWH00CWmeDFFUymt9I6sMVmMBmaRiFLz0hyeRbERmYTQADY5kpX-av9ushv8_cAwqcPy2l"></script>
+</body>
+<script src="scripts/cart.js"></script>
+</html>

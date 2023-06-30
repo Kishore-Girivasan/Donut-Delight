@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancelled</title>
+  </head>
+  <body>
+    <header>
+        <h1>Donut Delight</h1>
+    </header>
+    <main>
+        <img src="icons/cancelled.png" alt="cancelled image" />
+        <h1>Transaction canceled by the user!</h1>
+        <button id="return-btn">Return to cart</button>
+    </main>
+    <script>
+      const returnBtn = document.querySelector("#return-btn");
+      returnBtn.addEventListener("click", () => {
+        window.location.href = "cart.html";
+      });
+    </script>
+  </body>
+  <style>
+      header {
+      display: flex;
+      position: fixed;
+      background-color: #df1883;
+      color: white;
+      top: 0;
+      left: 0;
+      right: 0;
+      justify-content: start;
+      align-items: center;
+      height: 60px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      padding: 10px 30px;
+      z-index: 99999;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      font-style: italic;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    img {
+      height: 200px;
+      width: 200px;
+    }
+    button {
+      padding: 10px;
+      font-weight: bold;
+      margin-top: 20px;
+      border: 1px solid #df1883;
+      border-radius: 10px;
+      background-color: #df1883;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
+    button:active{
+        opacity: 0.5;
+    }
+    @media screen and (max-width: 575px){
+      img {
+        height: 120px;
+        width: 120px;
+      }
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</html>

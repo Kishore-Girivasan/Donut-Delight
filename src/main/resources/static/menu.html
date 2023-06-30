@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>Donut Delight | Menu</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span>Donut Delight</span>
+        </div>
+        <div class="search">
+            <div class="search-bar">
+                <input class="input-field" type="text" name="search-field" id="search-box" placeholder="Search menu items here">
+                <img id="search-icon" src="icons/search-icon.png" alt="search icon">
+            </div>
+        </div>
+        <div class="navigations">
+            <ul class="navigation-items">
+                <li id="cart" class="navigation-item cart">
+                    <a href="#">
+                        <img id="cart-icon" src="icons/cart-white-icon.png" alt="cart-icon">
+                    </a>
+                    <div class="cart-count">0</div>
+                </li>
+                <li id="profile" class="navigation-item profile">
+                    <a href="#">
+                        Login
+                        <!-- <img id="profile-icon" src="icons/profile-icon.png" alt="profile-icon"> -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+</header>
+    <div class="side-bar">
+        <ul id="menu-list" class="menu-categories">
+          <li class="heading" id="heading">
+            <img id="menu-icon" src="icons/menu-icon.png" alt="menu icon">
+            <span>Menu Categories</span>
+          </li>
+          <li class="menu-category" data-target="donut-combos">
+            <span class="menu-category-name">DONUT COMBOS</span>
+            <span id="donut-combos-count" class="menu-category-count">6</span>
+          </li>
+          <li class="menu-category" data-target="sandwiches-and-bakery">
+            <span class="menu-category-name">SANDWICHES AND BAKERY</span>
+            <span id="sandwiches-and-bakery-count" class="menu-category-count">8</span>
+          </li>
+          <li class="menu-category" data-target="donuts">
+            <span class="menu-category-name">DONUTS</span>
+            <span id="donuts-count" class="menu-category-count">15</span>
+          </li>
+          <li class="menu-category" data-target="hot-beverages">
+            <span class="menu-category-name">HOT BEVERAGES</span>
+            <span id="hot-beverages-count" class="menu-category-count">8</span>
+          </li>
+          <li class="menu-category" data-target="cold-beverages">
+            <span class="menu-category-name">COLD BEVERAGES</span>
+            <span id="cold-beverages-count" class="menu-category-count">8</span>
+          </li>
+        </ul>
+    </div>
+    <main>
+        <div class="contents">
+            <div class="no-items">
+                <div class="no-items-message">
+                    <img id="no-items-image" src="images/no-items-found.png" alt="No Item Found">
+                    <span>No Items Found</span>
+                    <span>your search list is empty..!</span>
+                </div>
+            </div>
+            <div class="donut-combos-div">
+                <div id="donut-combos" class="category-header">Donut Combos</div>
+                <div class="category-elements js-donut-combos">
+                    <!-- contains all the items in this category -->
+                    <!-- div is category-element -->
+                </div>
+            </div>
+            <div class="sandwiches-and-bakery-div">
+                <div id="sandwiches-and-bakery" class="category-header">sandwiches and Bakery</div>
+                <div class="category-elements js-sandwiches-and-bakery">
+                     <!-- contains all the items in this category -->
+                     <!-- div is category-element -->
+                </div>
+            </div>
+            <div class="donuts-div">
+                <div id="donuts" class="category-header">Donuts</div>
+                <div class="category-elements js-donuts">
+                     <!-- contains all the items in this category -->
+                     <!-- div is category-element -->
+                </div>
+            </div>
+            <div class="hot-beverages-div">
+                <div id="hot-beverages" class="category-header">Hot Beverages</div>
+                <div class="category-elements js-hot-beverages">
+                     <!-- contains all the items in this category -->
+                     <!-- div is category-element -->
+                </div>
+            </div>
+            <div class="cold-beverages-div">
+                <div id="cold-beverages" class="category-header">Cold Beverages</div>
+                <div class="category-elements js-cold-beverages">
+                     <!-- contains all the items in this category -->
+                     <!-- div is category-element -->
+                </div>
+        </div>
+        <form id="userForm">
+            <div data-status="not-active" class="login-signup-popup js-login-active">
+                <div class="close-btn">
+                    <img id="close-btn" src="icons/close.png" alt="close-btn-icon">
+                </div>
+                <div class="username js-login-clicked">
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="email js-login-clicked">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example123@gmail.com">
+                </div>
+                <div class="mobile-number login-active" id="mobile">
+                    <label id="phone-lable">Phone Number</label>
+                    <span>+91</span>
+                    <input type="text" id="phone" name="phone" maxlength="10">
+                </div>
+                <div class="login-signup-btn">
+                    <button class="login">Login</button>
+                    <button class="signup active" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="data/Menuitems.js"></script>
+<script src="scripts/menu.js"></script>
+</html>
