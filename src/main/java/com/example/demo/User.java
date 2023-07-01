@@ -11,6 +11,7 @@ public class User {
     private String name;
     private String email;
     private String phone;
+      // Constructors, Getters and setters 
     public Long getId() {
         return id;
     }
@@ -44,7 +45,7 @@ public class User {
         this.phone = phone;
     }
 
-    // Getters and setters (omitted for brevity)
+  
 
 
     
